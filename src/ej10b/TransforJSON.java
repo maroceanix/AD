@@ -39,7 +39,7 @@ public class TransforJSON {
 		JSONObject alumnosj= new JSONObject().put("alumnos", listaAlumnosJSON);
 		try {
 			Files.write(Paths.get("Alumnos.json"), alumnosj
-					.toString().getBytes());
+					mensaje.toString().getBytes());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
